@@ -3,3 +3,13 @@
 ################################################################################
 
 /BasicCrud.Data/bin/Debug
+/BasicCrud.Data/obj
+/BasicCrud.Logic/bin/Debug
+/BasicCrud.Logic/obj
+/BasicCrud.Test/bin/Debug
+/BasicCrud.Test/obj/Debug
+/BasicCrud.Webapi/bin
+/BasicCrud.Webapi/node_modules
+/BasicCrud.Webapi/obj/Debug
+/packages
+/.vs

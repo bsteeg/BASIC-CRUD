@@ -1,0 +1,27 @@
+﻿<div *ngIf='isLoggedIn == true'>
+    <nav class='navbar navbar-inverse'>
+        <div class='container-fluid'>
+            <ul class='nav navbar-nav'>
+                <li><a [routerLink]="['home']">Home</a></li>
+                <li><a [routerLink]="['user']">Users Management</a></li>
+                <li><a [routerLink]="['home']" (click)="Logout()">Log Out</a> </li>
+            </ul>
+        </div>
+    </nav>
+    <div class='container'>
+        <router-outlet></router-outlet>
+    </div>
+</div>
+<div *ngIf='isLoggedIn == false'>
+    <div class="container">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <router-outlet></router-outlet>
+            <md-tab-group>
+                <md-tab label="Login"><user-login></user-login></md-tab>
+                <md-tab label="Register"><user-register></user-register></md-tab>
+            </md-tab-group>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+</div>
